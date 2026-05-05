@@ -1,0 +1,23 @@
+{
+    "name": "Gemini CLI Dev Container",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "gemini-cli",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "googlecloudtools.cloudcode"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.terminal.useEnvFile": true
+            }
+        }
+    },
+    "remoteUser": "root"
+}
