@@ -4,6 +4,9 @@ services:
     volumes:
       # 現在のフォルダをコンテナに繋ぐ
       - .:/app
+      # サインイン情報を永続化する
+      - ./.gemini_session:/root/.npm
+      - ./.gemini_cache:/root/.cache
     environment:
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     working_dir: /app
